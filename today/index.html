@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+                #mainDiv{
+                    width:50%;
+                    margin-left:23%;
+                    margin-top: 5%;
+                    height:100%;
+                }
+                #output{
+                    height: 20%;
+                    background-color: blanchedalmond;
+                    width:100%;
+                }
+                #controls{
+                    width: 100%;;
+                }
+
+                .btn{
+                    width:100%;
+                    height:100px;
+                }
+
+            </style>
+            <script src="test.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div id='mainDiv'>
+        <div>
+            <input type="text" id="output"/>
+        </div>
+
+        <div>
+            <table id='controls'>
+                <tr>
+                    <td>
+                        <input type="button" class='.btn' value="1" onclick="RenderNumber(1)"/>
+                    </td>
+
+                    <td>
+                        <input type="button" class='.btn' value="2" onclick="RenderNumber(2)"/>
+                    </td>
+
+                    <td>
+                        <input type="button" class='.btn' value="3" onclick="RenderNumber(3)"/>
+                    </td>
+                    <td>
+                        <input type="button" class='.btn' value="+" onclick="RenderNumber('+')"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class='.btn' value="4" onclick="RenderNumber(4)"/>
+                    </td>
+
+                    <td>
+                        <input type="button" class='.btn' value="5" onclick="RenderNumber(5)"/>
+                    </td>
+
+                     <td>
+                        <input type="button" class='.btn' value="6" onclick="RenderNumber(6)"/>
+                    </td>
+                    <td>
+                        <input type="button" class='.btn' value="-" onclick="RenderNumber('-')"/>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type='button' class='.btn' value='7' onclick="RenderNumber(7)"/>
+                    </td>
+
+                    <td>
+                        <input type='button' class='.btn' value="8" onclick="RenderNumber(8)"/>
+                    </td>
+
+                    <td>
+                        <input type='button' class='.btn' value="9" onclick="RenderNumber(9)"/>
+                    </td>
+
+                     <td>
+                        <input type='button' class='.btn' value="*" onclick="RenderNumber('*')"/>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <input type="button" class=".btn" value="C" onclick="rm()"/>
+                    </td>
+
+                    <td>
+                        <input type="button" class=".btn" value="0" onclick="RenderNumber(0)"/>
+                    </td>
+
+                    <td>
+                        <input type="button" class=".btn" value="=" onclick="solve()"/>
+                    </td>
+                    <td>
+                        <input type="button" class=".btn" value="/" onclick="RenderNumber('/')"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        </div>
+
+
+
+
+
+    </body>
+</html>
